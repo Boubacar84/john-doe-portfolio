@@ -1,0 +1,46 @@
+
+.service-card {
+    transition: all 0.3s ease;
+  }
+  
+  .service-card:hover {
+    background-color: #efefef;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+  }
+  
+  .portfolio-card {
+    transition: all 0.3s ease;
+  }
+  
+  .portfolio-card:hover {
+    background-color: #efefef;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+  }
+  
+  .portfolio-card .btn {
+    transition: background-color 0.3s ease;
+  }
+  
+  .portfolio-card .btn:hover {
+    background-color: #004085; /* un bleu plus foncé que le primary Bootstrap */
+  }
+  
+  /* Map responsive */
+  
+  .map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+  
+  .map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  
