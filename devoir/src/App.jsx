@@ -7,7 +7,8 @@ import Services from './pages/services';
 import Portfolio from './pages/portofolio';
 import Contact from './pages/contact';
 import MentionsLegales from './pages/mentionslegales';
-import '../src/styles/main.css'
+import '../src/styles/main.css';
+
 
 function App() {
   return (

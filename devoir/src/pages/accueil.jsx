@@ -7,11 +7,13 @@ function Accueil() {
 
   return (
     <>
-      <div className="hero d-flex align-items-center justify-content-center text-white text-center" style={{ backgroundImage: `url(/assets/images/hero.jpg)`, height: '100vh', backgroundSize: 'cover' }}>
+  
+      <div className="hero d-flex align-items-center justify-content-center text-white text-center" style={{ backgroundImage: `url(/assets/images/hero-bg.jpg)`, height: '100vh', backgroundSize: 'cover', filter:'saturate(25%)' }}>
         <div>
-          <h1>Bienvenue, je suis John DOE</h1>
-          <h2>Développeur Web en alternance</h2>
-          <Button variant="light" onClick={() => setShowModal(true)}>En savoir plus</Button>
+          <h1>Bonjour, je suis John DOE</h1>
+          <h2>Développeur web full stack</h2>
+          <Button variant="danger" onClick={() => setShowModal(true)} style={{filter:'initial'}}>En savoir plus</Button>
+    
         </div>
       </div>
 
@@ -19,15 +21,24 @@ function Accueil() {
         <Row>
           <Col md={6}>
             <h3>À propos</h3>
-            <p>Développeur passionné en fin de formation au CEF, je suis à la recherche d'une alternance.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quos facere tenetur blanditiis,
+                    laudantium
+                    eum obcaecati eaque libero, adipisci minus nostrum omnis nam iusto inventore quasi veniam temporibus
+                    quod non voluptates assumenda. Nam illum voluptatibus quisquam ipsum laudantium hic tempora deleniti
+                    vero ipsam praesentium beatae eius nostrum, repellat aliquam porro, veritatis explicabo nesciunt,
+                    sit
+                    velit tenetur debitis inventore a quis voluptatem. Magni enim, tempore numquam dicta incidunt optio
+                    aliquam consequatur amet qui officia veritatis, corrupti ut exercitationem? Vel asperiores fugit
+                    doloremque! Facere itaque accusamus nulla, dolor voluptates in laudantium vitae!.</p>
           </Col>
           <Col md={6}>
             <h3>Compétences</h3>
-            <p>HTML / CSS / JavaScript / React / GitHub</p>
-            <ProgressBar striped variant="success" now={90} label="HTML" className="mb-2" />
-            <ProgressBar striped variant="info" now={85} label="CSS" className="mb-2" />
-            <ProgressBar striped variant="warning" now={70} label="JavaScript" className="mb-2" />
-            <ProgressBar striped variant="danger" now={60} label="React" className="mb-2" />
+        
+            <ProgressBar striped variant="danger" now={90} label="HTML 90%" className="mb-2" />
+            <ProgressBar striped variant="info" now={80} label="CSS 80%" className="mb-2" />
+            <ProgressBar striped variant="warning" now={70} label="JavaScript 70%" className="mb-2" />
+             <ProgressBar striped variant="success" now={60} label="PHP 60%" className="mb-2" />
+            <ProgressBar striped variant="blue" now={50} label="React 50%" className="mb-2" />
           </Col>
         </Row>
       </Container>
